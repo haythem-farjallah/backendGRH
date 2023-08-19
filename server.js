@@ -4,6 +4,7 @@ import app from "./app.js";
 
 dotenv.config({ path: ".env" });
 mongoose.set("strictQuery", false);
+//DATABASE_LOCAL=mongodb://127.0.0.1:27017/GRH
 mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
   console.log(`DB connection sucessfull`);
 });
